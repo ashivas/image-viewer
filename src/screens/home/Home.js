@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
-import Header from '../../common/header/Header'
+import Header from '../../common/header/Header';
+import Login from '../login/Login'
 
 class Home extends Component {
 
     render() {
         return(
-            <Header/>
+            <div>
+                <Header/>
+                <Login></Login>
+            </div>
+           
+       
         )
     }
 }
