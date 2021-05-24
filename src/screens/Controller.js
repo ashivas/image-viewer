@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class Controller extends Component {
 
-    accessToken="IGQVJXaHczZAlBEdGRqaG10YUtZAOWNkdU1nbmlTa1Utd3NtWHBRdWRFbUR0bmtLVGdoMWthMlVMNjVUR2stVnNPdUpUM2hqblZAJTFVNTTFzNFM2Uzludk91T0ptM1JvVnNiX2V5VU90bEZAPTzFaQkhFSzFSZA2VncVJUUmNZA";
+    accessToken="";
 
     render(){
         return(
