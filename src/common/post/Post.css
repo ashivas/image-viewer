@@ -1,0 +1,11 @@
+.cardStyle {
+    width: 400px;
+    padding: 32px;
+    margin: auto;
+    text-align: left;
+}
+
+.media {
+    padding-top: '56.25%';
+    height:300px;
+}

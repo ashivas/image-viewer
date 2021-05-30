@@ -2,6 +2,12 @@
     background-color: #263238;
     height: 36px;
     padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    float: right;
 }
 
 .header-title {
