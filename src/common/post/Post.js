@@ -15,10 +15,7 @@ import Typography from '@material-ui/core/Typography';
 import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 import profileImage from "../../assets/upgrad.svg"
-import Config from '../../common/config';
 
 const styles =  theme => ({
     card: {

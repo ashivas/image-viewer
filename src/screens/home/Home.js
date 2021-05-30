@@ -118,7 +118,7 @@ class Home extends Component {
             post['likes_count'] = 5;
             let regex = /#(\w+)/g;
             post['hashtags'] =  currentPost.caption.match(regex);
-            post['hashtags'] =   currentPost['hashtags']?currentPost['hashtags'].join(' ') : ''
+            post['hashtags'] =   post['hashtags']?post['hashtags'].join(' ') : ''
             post.caption  = currentPost.caption.replace(/#([^\s]*)/gm, '');
         })
 
