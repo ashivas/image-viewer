@@ -5,7 +5,7 @@ var Config =
         "password": "upgrad"
     },
     "auth": {
-        "access-token": "IGQVJWTDNEaHpCdHZApT1ZANSEJUTTlxeU1FNHNQWkhlZATJvRkpyakxRaXRBRVZA0ZAXJRLXp4aFB2d3JaY3RIU0dQU0N1TXJBcTZAKTkRfbjZAVY0VsWEhPVmdxVHVIamtVVXVMd3NiUERmb3BOMFhtM0pfNAZDZD"        
+        "access-token": "IGQVJWSjZA4ZAkZAvbllZAN2t6Nll3U1VGZAmpwNVRpaU84RnlqV3Y0NGlGOHNHaXc5U0NmRXpBVF9jTzNpaHRQMU5rS1NrclJXdmtrQkFHWUlXRmE3bGpnaVpTcS1aM1ZAZARWF3VTdyTm01TEZAKaDR0RjJZAUm9tU0s0VTBMcmpr"        
     },
     "api": {
         mediaUrl: "https://graph.instagram.com/me/media?fields=id,caption",

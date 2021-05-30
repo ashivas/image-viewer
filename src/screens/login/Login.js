@@ -61,7 +61,7 @@ class Login extends Component {
             <div>
                 <Header screen={"Login"}/>
 
-                <Card className="cardStyle">
+                <Card className="cardStyle" style={{marginTop:'80px'}}>
                     <CardContent>
                         <Typography variant="h4">
                             LOGIN

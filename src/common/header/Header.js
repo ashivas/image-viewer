@@ -69,7 +69,7 @@ class Header extends Component {
 
      onClickHandler = (event) =>{ 
         this.setState({
-          ancherElement: event.currentTarget
+          anchorEl: event.currentTarget
         })
       }
     
@@ -84,7 +84,7 @@ class Header extends Component {
       }
     
       onCloseButtonClickHandler = () =>{
-        this.setState({ ancherElement: null });
+        this.setState({ anchorEl: null });
       }
 
 
@@ -113,8 +113,8 @@ class Header extends Component {
                     </IconButton>
                     <Popover
                       id="simple-menu"
-                      ancherElement={this.state.ancherElement}
-                      open={Boolean(this.state.ancherElement)}
+                      anchorEl={this.state.anchorEl}
+                      open={Boolean(this.state.anchorEl)}
                       onClose={this.onCloseButtonClickHandler}
                       anchorOrigin={{
                         vertical: 'bottom',

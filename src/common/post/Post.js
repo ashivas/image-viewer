@@ -1,14 +1,24 @@
 import './Post.css';
 import React, {Component} from 'react';
 import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import IconButton from '@material-ui/core/IconButton';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
+import {withStyles} from '@material-ui/core/styles';
+import FavoriteIconBorder from '@material-ui/icons/FavoriteBorder';
+import FormControl from '@material-ui/core/FormControl';
+import FavoriteIconFill from '@material-ui/icons/Favorite';
 import Typography from '@material-ui/core/Typography';
-import logo from '../static/user-logo.jpg'
+import InputLabel from '@material-ui/core/InputLabel';
+import Input from '@material-ui/core/Input';
+import Button from '@material-ui/core/Button';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import profileImage from "../../assets/upgrad.svg"
+import Config from '../../common/config';
 
 const styles =  theme => ({
     card: {
@@ -171,5 +181,5 @@ class Post extends Component{
     }
   }
 
-export default withStyle(styles)(Post);
+export default withStyles(styles)(Post);
 
