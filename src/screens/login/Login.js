@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import './Login.css';
 import Header from '../../common/header/Header'
+import Config from '../../common/config';
 
 class Login extends Component {
     constructor() {
@@ -18,7 +19,8 @@ class Login extends Component {
             password: '',
             isUsernameRequired: 'dispNone',
             isPasswordRequired: 'dispNone',
-            isInvalidUserNameOrPassword: 'dispNone'
+            isInvalidUserNameOrPassword: 'dispNone',
+            loggedIn: sessionStorage.getItem('access-token') == null ? false : true
         };
     }
 
@@ -40,12 +42,15 @@ class Login extends Component {
 
         // Do login logic here
         if (this.state.username !== '' && this.state.password !== '') {
-            if (this.state.username === 'a' && this.state.password === 'a') {
+            if (this.state.username === Config.login.username && this.state.password === Config.login.password) {
                 this.setState({ isInvalidUserNameOrPassword: 'dispNone' });
-                this.props.history.push('/home/');
+                sessionStorage.setItem('username', Config.login.username );
+                sessionStorage.setItem('access-token', Config.auth["access-token"]);
+                this.setState({ loggedIn: true });
+                this.props.history.push('/home');
                 //Redirect to Home
             } else {
-                this.setState({ isInvalidUserNameOrPassword: 'dospBlock' })
+                this.setState({ isInvalidUserNameOrPassword: 'dispBlock' })
             }
         }
     }
@@ -54,7 +59,7 @@ class Login extends Component {
 
         return (
             <div>
-                <Header />
+                <Header screen={"Login"}/>
 
                 <Card className="cardStyle">
                     <CardContent>
@@ -88,7 +93,7 @@ class Login extends Component {
                         </FormHelperText>
 
                         <Button variant="contained" onClick={this.loginClickHandler} color="primary">
-                            Login
+                            LOGIN
                         </Button>
 
                     </CardContent>
