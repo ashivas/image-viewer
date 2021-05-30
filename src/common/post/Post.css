@@ -1,11 +1,27 @@
-.cardStyle {
-    width: 400px;
-    padding: 32px;
-    margin: auto;
-    text-align: left;
-}
-
-.media {
-    padding-top: '56.25%';
-    height:300px;
-}
+.post-main-container{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .post-profile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .horizpontal-rule{
+    margin:10px;
+    background-color:"#FF5722"
+  }
+  .post-profile-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: row;
+  }

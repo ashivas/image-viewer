@@ -1,7 +1,49 @@
 import React, {Component} from 'react';
 import Header from '../../common/header/Header';
 import Login from '../login/Login'
-import Post from '../../common/post/Post'
+import Post from '../../common/post/Post';
+import profileImage from "../../assets/upgrad.svg"
+import Config from '../../common/config';
+
+
+const homeStyles =  theme => ({
+    card: {
+      maxWidth: 1100,
+    },
+    avatar: {
+      margin: 10,
+    },
+    media: {
+      height:0,
+      paddingTop: '56.25%',
+    },
+    formControl: {
+      display:'flex',
+      flexDirection:'row',
+      justifyContent:'space-between',
+      alignItems:'baseline',
+    },
+    comment:{
+      display:'flex',
+      alignItems:'center',
+    },
+    hr:{
+      marginTop:'10px',
+      borderTop:'2px solid #f2f2f2'
+    },
+    gridList:{
+      width: 1100,
+      height: 'auto',
+      overflowY: 'auto',
+    },
+    grid:{
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      marginTop:90
+    }
+  });
+  
 
 class Home extends Component {
 
@@ -79,6 +121,9 @@ class Home extends Component {
             const currentPost = await fetch(url).then(response =>response.json());
             allPosts.push(currentPost);
         }
+
+
+        
         this.setState({
             posts: this.allPosts
         })
@@ -86,5 +131,4 @@ class Home extends Component {
 
 
 }
-
-export default Home;
+export default withStyles(homeStyles)(Home);
